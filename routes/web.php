@@ -7,7 +7,8 @@ Route::get('/', function () {
 });
 
 Route::post('/', function () {
-    \DB::table('words')->insert(['name' => \Str::random(8)]);
+    $name = request()->input('name') ?: \Str::random(8);
+    \DB::table('words')->insert(['name' => $name]);
     $referer = request()->headers->get('referer');
     return redirect($referer);
 });

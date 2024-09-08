@@ -45,7 +45,7 @@
     @endforeach
     <form method="post">
         @csrf
-        <input type="text">
+        <input name="name">
         <input type="submit">
     </form>
     </main>
