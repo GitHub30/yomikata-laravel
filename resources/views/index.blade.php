@@ -43,6 +43,11 @@
     @foreach ($words as $word)
         <p>このユーザーは：{{ $word->name }}</p>
     @endforeach
+    <form method="post">
+        @csrf
+        <input type="text">
+        <input type="submit">
+    </form>
     </main>
 </body>
 
