@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('votes', function (Blueprint $table) {
             $table->id();
-            $table->string('ip')->unique();
+            $table->string('ip');
             $table->unsignedBigInteger('pronunciation_id');
             $table->foreign('pronunciation_id')->references('id')->on('pronunciations');
+            $table->unique(['pronunciation_id', 'ip']);
             $table->timestamps();
         });
     }
