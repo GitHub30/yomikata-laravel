@@ -31,6 +31,11 @@
             <p>ここに詳細情報が入ります。</p>
         </details>
         <details>
+            <summary>b</summary>
+            <p>ここに詳細情報が入ります。</p>
+        </details>
+        <details>
+            <summary>c</summary>
             <p>ここに詳細情報が入ります。</p>
         </details>
     </aside>
