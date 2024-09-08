@@ -40,9 +40,9 @@
         </details>
     </aside>
     <main>
-        <p>height</p>
-        <p>orz</p>
-        <p>git</p>
+    @foreach ($words as $word)
+        <p>このユーザーは：{{ $word->name }}</p>
+    @endforeach
     </main>
 </body>
 
